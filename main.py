@@ -14,7 +14,7 @@ with open('info.json', 'w') as data:
     data.close()
 
 app=FastAPI()
-app.post('/attend/{data}')
+@app.post('/attend/{data}')
 def attend(data : str):
     splitted_data = data.split('|')
     code = splitted_data[0]
@@ -23,8 +23,8 @@ def attend(data : str):
         js = load(data)
         js['sessions'][sscode] = {'attendance' : []}
         js['sessions'][sscode]['attendance'].append(code)
-        dump(js, dat)
+        dump(js, data)
 
-app.get('/sa')
+@app.get('/sa')
 def sa():
     return load(open('info.json', 'w'))
