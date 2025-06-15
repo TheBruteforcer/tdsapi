@@ -1,0 +1,5 @@
+2025-03-12 03:33:22,668 - INFO - Processing database: Application.db
+2025-03-12 03:33:22,683 - ERROR - Fatal error in main: name 'process_all_groups' is not defined
+2025-03-12 03:35:07,934 - INFO - Processing database: Application.db
+2025-03-12 03:35:07,934 - ERROR - Fatal error in main processing: 'DataProcessor' object has no attribute '_calculate_financial_data'
+2025-03-12 03:35:07,934 - ERROR - Application error: 'DataProcessor' object has no attribute '_calculate_financial_data'
